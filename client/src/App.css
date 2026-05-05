@@ -1,0 +1,120 @@
+.watchDetailHS {
+    height: 5vh;
+    border-radius: 8px;
+}
+
+/* Target the built-in Bootstrap indicators */
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    /* This makes it a perfect circle */
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: white;
+    opacity: 1;
+    /* Makes inactive dots slightly see-through */
+}
+
+/* Make the currently active dot fully solid so it stands out */
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: cyan;
+}
+
+/* 📱 MOBILE (Default) */
+/* Write all your standard CSS here at the top. 
+   This applies to phones (0px up to 767px). */
+.hero-caption-box {
+    padding: 30px;
+    width: 95%;
+    position: relative;
+    top: 160px;
+}
+
+.hero-caption-box p {
+    display: none;
+}
+
+.hover-project-btn:hover {
+    background-color: #d0d5dd;
+}
+
+.custom-project-link {
+    color: #F8F9FA;
+    background-color: #4C5263;
+}
+
+.custom-project-link .project-icon {
+    color: #F8F9FA;
+    transition: color 0.2s ease-in-out;
+}
+
+.custom-project-link:hover {
+    color: #1F242C;
+    transform: translateY(-2px);
+}
+
+.custom-project-link:hover .project-icon {
+    color: #1F242C !important;
+}
+
+/* --- WEBSITE LINKS HOVER --- */
+.custom-website-link:hover {
+    color: #1087F6 !important;
+    transform: translateX(5px);
+}
+
+/* Optional: Make the chevron jump slightly too */
+.custom-website-link:hover .website-icon {
+    transform: scale(1.2);
+}
+
+.website-icon:hover {
+    color: #1087F6 !important;
+}
+
+
+/* 💊 TABLET (768px and up) */
+/* This matches Bootstrap's "md" breakpoint */
+@media (min-width: 768px) {
+    .hero-caption-box {
+        padding: 30px;
+        position: relative;
+        top: 130px;
+    }
+
+    .hero-caption-box p {
+        display: block;
+    }
+}
+
+/* 💻 DESKTOP (992px and up) */
+/* THIS IS YOUR ANSWER: 992px is the standard Desktop starting point! 
+   It matches Bootstrap's "lg" breakpoint. */
+@media (min-width: 992px) {
+    .hero-caption-box {
+        padding: 30px;
+        background-opacity: 0.6;
+        position: relative;
+        top: 140px;
+    }
+
+    .hero-caption-box p {
+        display: block;
+    }
+}
+
+/* 🖥️ LARGE DESKTOP (1200px and up - Optional) */
+/* Matches Bootstrap's "xl" breakpoint for massive monitors */
+@media (min-width: 1300px) {
+    .hero-caption-box {
+        padding: 40px;
+        position: relative;
+        top: 160px;
+    }
+
+    .hero-caption-box p {
+        display: block;
+    }
+}
